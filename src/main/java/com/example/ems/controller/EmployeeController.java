@@ -24,7 +24,7 @@ public class EmployeeController {
 
     @GetMapping("/")
     public String viewHomePage(Model model){
-        model.addAttribute("listEmployess", employeeService.getAllEmployees());
+        model.addAttribute("listEmployees", employeeService.getAllEmployees());
         return "index";
     }
 }
